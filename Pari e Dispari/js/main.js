@@ -9,6 +9,11 @@ const numeroPc = numeroRandom(1, 5);
 console.log(numeroPc);
 let pariDispari = prompt('Scegli se il numero sarà pari o dispari');
 console.log(pariDispari);
+
+while (pariDispari != 'pari' && pariDispari != 'dispari') {
+    pariDispari = prompt('Scrivi solo "pari" o "dispari"');
+}
+
 let numeroUtente = parseInt(prompt('Scegli un numero da 1 a 5'));
 
 while (isNaN(numeroUtente) || numeroUtente > 5 || numeroUtente <= 0) {
